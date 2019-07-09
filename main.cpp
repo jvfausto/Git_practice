@@ -8,13 +8,10 @@
  */
 
 
-
 #include "mbed.h"
-
 #include "stats_report.h"
 
-
-
+DigitalOut led3(LED3);
 DigitalOut led1(LED1);
 DigitalOut led2(LED2);
 
@@ -40,10 +37,13 @@ int main()
     while (true) {
 
         // Blink LED and wait 0.5 seconds
-        led2 = !led2;
+	led2 = !led2;
+	led3 = !led2;
         led1 = led1;
         wait_ms(SLEEP_TIME);
-        
+        /*to checck if shit gets indentified */
+
+        wait_ms(SLEEP_TIME);
         /*to checck if shit gets indentified */
         if ((0 == count) || (PRINT_AFTER_N_LOOPS == count)) {
             // Following the main thread wait, report on the current system status
