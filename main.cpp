@@ -19,7 +19,7 @@ DigitalOut led1(LED1);
 
 
 
-#define SLEEP_TIME                  500 // (msec)
+#define SLEEP_TIME                  1000 // (msec)
 
 #define PRINT_AFTER_N_LOOPS         20
 
@@ -41,7 +41,7 @@ int main()
 
         // Blink LED and wait 0.5 seconds
 
-        led1 = led1;
+        led1 = !led1;
 
         wait_ms(SLEEP_TIME);
 
