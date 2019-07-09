@@ -41,22 +41,15 @@ int main()
 
         // Blink LED and wait 0.5 seconds
 
-        led1 = !led1;
-
+        led1 = led1;
         wait_ms(SLEEP_TIME);
-
-
-
+        
+        /*to checck if shit gets indentified */
         if ((0 == count) || (PRINT_AFTER_N_LOOPS == count)) {
-
             // Following the main thread wait, report on the current system status
-
             sys_state.report_state();
-
             count = 0;
-
         }
-
         ++count;
 
     }
