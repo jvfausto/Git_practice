@@ -11,7 +11,7 @@
 //making a confilg
 #include "mbed.h"
 #include "stats_report.h"
-
+//forgitconflict 2
 DigitalOut led3(LED3);
 DigitalOut led1(LED1);
 DigitalOut led2(LED2);
