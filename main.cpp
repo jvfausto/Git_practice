@@ -15,7 +15,7 @@
 DigitalOut led3(LED3);
 DigitalOut led1(LED1);
 DigitalOut led2(LED2);
-
+//Eclipse saves the file so we can publish changes
 
 #define SLEEP_TIME                  1000 // (msec)
 
